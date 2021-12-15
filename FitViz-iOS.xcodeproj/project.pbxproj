@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7F10CD8A276998320044F77D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CD89276998320044F77D /* AppDelegate.swift */; };
-		7F10CD8E276998320044F77D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CD8D276998320044F77D /* ViewController.swift */; };
+		7F10CD8E276998320044F77D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CD8D276998320044F77D /* HomeViewController.swift */; };
 		7F10CD93276998360044F77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F10CD92276998360044F77D /* Assets.xcassets */; };
 		7F10CD96276998360044F77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F10CD94276998360044F77D /* LaunchScreen.storyboard */; };
+		7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CD9F27699F030044F77D /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F10CD86276998320044F77D /* FitViz-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitViz-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F10CD89276998320044F77D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F10CD8D276998320044F77D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F10CD8D276998320044F77D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F10CD92276998360044F77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F10CD95276998360044F77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F10CD97276998360044F77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F10CD9F27699F030044F77D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,30 @@
 		7F10CD88276998320044F77D /* FitViz-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7F10CD89276998320044F77D /* AppDelegate.swift */,
-				7F10CD8D276998320044F77D /* ViewController.swift */,
+				7F10CD9E27699EF40044F77D /* Views */,
+				7F10CD9D27699EEB0044F77D /* App */,
 				7F10CD92276998360044F77D /* Assets.xcassets */,
 				7F10CD94276998360044F77D /* LaunchScreen.storyboard */,
 				7F10CD97276998360044F77D /* Info.plist */,
 			);
 			path = "FitViz-iOS";
+			sourceTree = "<group>";
+		};
+		7F10CD9D27699EEB0044F77D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7F10CD89276998320044F77D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7F10CD9E27699EF40044F77D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F10CD8D276998320044F77D /* HomeViewController.swift */,
+				7F10CD9F27699F030044F77D /* SettingsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F10CD8E276998320044F77D /* ViewController.swift in Sources */,
+				7F10CD8E276998320044F77D /* HomeViewController.swift in Sources */,
 				7F10CD8A276998320044F77D /* AppDelegate.swift in Sources */,
+				7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
