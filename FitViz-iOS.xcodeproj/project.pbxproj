@@ -12,6 +12,8 @@
 		7F10CD93276998360044F77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F10CD92276998360044F77D /* Assets.xcassets */; };
 		7F10CD96276998360044F77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F10CD94276998360044F77D /* LaunchScreen.storyboard */; };
 		7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CD9F27699F030044F77D /* SettingsViewController.swift */; };
+		7F10CDA2276AD9640044F77D /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CDA1276AD9640044F77D /* OnboardViewController.swift */; };
+		7FFD1264276AE1370078688B /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD1263276AE1370078688B /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7F10CD95276998360044F77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F10CD97276998360044F77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F10CD9F27699F030044F77D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7F10CDA1276AD9640044F77D /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		7FFD1263276AE1370078688B /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		7F10CD88276998320044F77D /* FitViz-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7FFD1261276AE1170078688B /* Utilities */,
 				7F10CD9E27699EF40044F77D /* Views */,
 				7F10CD9D27699EEB0044F77D /* App */,
 				7F10CD92276998360044F77D /* Assets.xcassets */,
@@ -76,8 +81,25 @@
 			children = (
 				7F10CD8D276998320044F77D /* HomeViewController.swift */,
 				7F10CD9F27699F030044F77D /* SettingsViewController.swift */,
+				7F10CDA1276AD9640044F77D /* OnboardViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7FFD1261276AE1170078688B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD1262276AE1240078688B /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7FFD1262276AE1240078688B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD1263276AE1370078688B /* UserDefaultManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +174,9 @@
 			files = (
 				7F10CD8E276998320044F77D /* HomeViewController.swift in Sources */,
 				7F10CD8A276998320044F77D /* AppDelegate.swift in Sources */,
+				7F10CDA2276AD9640044F77D /* OnboardViewController.swift in Sources */,
 				7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */,
+				7FFD1264276AE1370078688B /* UserDefaultManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
