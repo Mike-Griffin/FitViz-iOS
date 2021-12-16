@@ -13,7 +13,7 @@ enum DefaultsKeys: String {
 
 class UserDefaultManager {
     // singleton to access user defaults from anywhere
-    let shared = UserDefaultManager()
+    static let shared = UserDefaultManager()
     let defaults = UserDefaults.standard
     
     func setShowOnboarding() {
