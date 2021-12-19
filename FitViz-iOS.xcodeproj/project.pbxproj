@@ -13,6 +13,8 @@
 		7F10CD96276998360044F77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F10CD94276998360044F77D /* LaunchScreen.storyboard */; };
 		7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CD9F27699F030044F77D /* SettingsViewController.swift */; };
 		7F10CDA2276AD9640044F77D /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CDA1276AD9640044F77D /* OnboardViewController.swift */; };
+		7F5B859C276EBBFD00928EB7 /* FVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B859B276EBBFD00928EB7 /* FVDataManager.swift */; };
+		7F5B859E276EBD3200928EB7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B859D276EBD3200928EB7 /* User.swift */; };
 		7FFD1264276AE1370078688B /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD1263276AE1370078688B /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		7F10CD97276998360044F77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F10CD9F27699F030044F77D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7F10CDA1276AD9640044F77D /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		7F5B859B276EBBFD00928EB7 /* FVDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVDataManager.swift; sourceTree = "<group>"; };
+		7F5B859D276EBD3200928EB7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7FFD1263276AE1370078688B /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,7 @@
 		7F10CD88276998320044F77D /* FitViz-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7F5B859F276EBD4700928EB7 /* Model */,
 				7FFD1261276AE1170078688B /* Utilities */,
 				7F10CD9E27699EF40044F77D /* Views */,
 				7F10CD9D27699EEB0044F77D /* App */,
@@ -86,6 +91,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7F5B859F276EBD4700928EB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B859D276EBD3200928EB7 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7FFD1261276AE1170078688B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		7FFD1262276AE1240078688B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				7F5B859B276EBBFD00928EB7 /* FVDataManager.swift */,
 				7FFD1263276AE1370078688B /* UserDefaultManager.swift */,
 			);
 			path = Managers;
@@ -177,6 +191,8 @@
 				7F10CDA2276AD9640044F77D /* OnboardViewController.swift in Sources */,
 				7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */,
 				7FFD1264276AE1370078688B /* UserDefaultManager.swift in Sources */,
+				7F5B859C276EBBFD00928EB7 /* FVDataManager.swift in Sources */,
+				7F5B859E276EBD3200928EB7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

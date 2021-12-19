@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
     }
     
     private func displayOnboarding() {
+        Task {
+            let user = await FVDataManager.shared.createUser()
+            print(user)
+        }
         if !UserDefaultManager.shared.getShowOnboarding() {
             let onboardVC = OnboardViewController()
             onboardVC.view.translatesAutoresizingMaskIntoConstraints = false
