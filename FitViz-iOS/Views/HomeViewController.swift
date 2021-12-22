@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         displayOnboarding()
+        displayActivities()
         configureChildren()
         configureConstraints()
     }
@@ -48,6 +49,13 @@ class HomeViewController: UIViewController {
             if let userId = UserDefaultManager.shared.getUserId() {
                 print(userId)
             }
+        }
+    }
+    
+    private func displayActivities() {
+        if let id = UserDefaultManager.shared.getUserId() {
+            // TODO: split out this logic to handle the case where this should exist but it doesn't
+            let activityFeedVC = ActivityFeedViewController(userId: id)
         }
     }
 

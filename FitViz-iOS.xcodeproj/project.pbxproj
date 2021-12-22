@@ -15,6 +15,7 @@
 		7F10CDA2276AD9640044F77D /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10CDA1276AD9640044F77D /* OnboardViewController.swift */; };
 		7F5B859C276EBBFD00928EB7 /* FVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B859B276EBBFD00928EB7 /* FVDataManager.swift */; };
 		7F5B859E276EBD3200928EB7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B859D276EBD3200928EB7 /* User.swift */; };
+		7F5B85A12772B16D00928EB7 /* ActivityFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B85A02772B16D00928EB7 /* ActivityFeedViewController.swift */; };
 		7FFD1264276AE1370078688B /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD1263276AE1370078688B /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		7F10CDA1276AD9640044F77D /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		7F5B859B276EBBFD00928EB7 /* FVDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVDataManager.swift; sourceTree = "<group>"; };
 		7F5B859D276EBD3200928EB7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F5B85A02772B16D00928EB7 /* ActivityFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedViewController.swift; sourceTree = "<group>"; };
 		7FFD1263276AE1370078688B /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				7F10CD8D276998320044F77D /* HomeViewController.swift */,
 				7F10CD9F27699F030044F77D /* SettingsViewController.swift */,
 				7F10CDA1276AD9640044F77D /* OnboardViewController.swift */,
+				7F5B85A02772B16D00928EB7 /* ActivityFeedViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				7F10CDA027699F030044F77D /* SettingsViewController.swift in Sources */,
 				7FFD1264276AE1370078688B /* UserDefaultManager.swift in Sources */,
 				7F5B859C276EBBFD00928EB7 /* FVDataManager.swift in Sources */,
+				7F5B85A12772B16D00928EB7 /* ActivityFeedViewController.swift in Sources */,
 				7F5B859E276EBD3200928EB7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
