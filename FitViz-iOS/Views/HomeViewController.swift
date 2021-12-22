@@ -24,10 +24,7 @@ class HomeViewController: UIViewController {
     }
     
     private func displayOnboarding() {
-        Task {
-            let user = await FVDataManager.shared.createUser()
-            print(user)
-        }
+
         if !UserDefaultManager.shared.getShowOnboarding() {
             let onboardVC = OnboardViewController()
             onboardVC.view.translatesAutoresizingMaskIntoConstraints = false
@@ -39,8 +36,19 @@ class HomeViewController: UIViewController {
                 onboardVC.view.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.75),
                 onboardVC.view.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.75)
             ])
+            Task {
+                if let user = await FVDataManager.shared.createUser() {
+                    UserDefaultManager.shared.setUserId(user.id)
+                    print(user)
+                }
+            }
+            UserDefaultManager.shared.setShowOnboarding()
+
+        } else {
+            if let userId = UserDefaultManager.shared.getUserId() {
+                print(userId)
+            }
         }
-        UserDefaultManager.shared.setShowOnboarding()
     }
 
     private func configureChildren() {
